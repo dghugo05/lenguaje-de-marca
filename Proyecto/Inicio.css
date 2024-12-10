@@ -1,18 +1,201 @@
-nav{
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    background: linear-gradient(to bottom, rgb(200, 95, 95), rgb(32, 4, 4));
+    height: 100%;
     display: flex;
-    flex-direction: row ;
+    flex-direction: column;
+}
+
+header > section{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+h1{
+    font-size: 4em; /* Ajusta el tamaño de la fuente según sea necesario */
+    background-image: url('/Multimedia/images.jpg'); /* Cambia esta ruta a la ubicación de tu imagen */
+    background-size: cover; /* Asegúrate de que la imagen cubra todo el texto */
+    background-position: center; /* Centra la imagen en el texto */
+    -webkit-background-clip: text; /* Para navegadores WebKit (Chrome, Safari) */
+    background-clip: text; /* Para otros navegadores */
+    color: transparent; /* Hace que el color del texto sea transparente */
+    text-align: center;
+    margin-block: 0px;
+}
+
+hr{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    background-color: rgb(114, 113, 113);
+    height: 30px;
+}
+
+ul {
+    list-style-type: none;
+    position: absolute;
+    z-index: 10;
+    display: none;
+    padding-left: 0px;
+    background-color: rgb(114, 113, 113);
+    margin-block-start: 0px;
+    padding-top:5.20px;
+}
+
+ul > li{
+    padding-top: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: white solid 1px;
+}
+
+.secciones {
+    text-decoration: none;
+    color: white;
+}
+
+#descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#descripcion > h2{
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    text-decoration:underline solid white 2px;
+}
+
+#descripcion > p{
+    background-color: rgb(114, 113, 113);
+    height: fit-content;
+    width: fit-content;
+    border: 10px none black;
+    border-radius: 1%;
+    box-shadow: 0px 0px 9px darkgray;
+    color: rgb(220, 207, 207);
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#comparativa{
+    display: flex;
+    flex-direction: column;
+}
+
+#comparativa > h2{
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    text-decoration:underline solid white 2px;
+    align-self: center;
+}
+
+#contenedorImagen{
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 
-ul{
-    list-style-type: none;
-    position: absolute;
-    z-index: 1000;
-    display: none;
-    padding-left: 0px;
+#contenedorImagen > label{
+    background-color:rgb(114, 113, 113);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 340px;
+    border: 10px none black;
+    border-radius: 1%;
+    box-shadow: 0px 0px 9px darkgray;
+    color: rgb(220, 207, 207);
 }
 
-.secciones{
-    text-decoration: none;
-    color: black;
+.codigo{
+    text-decoration: underline dashed rgb(220, 207, 207) 2px;
+}
+
+.imagenPOU {
+    width: 120px;
+    height: auto;
+}
+
+.imagenPOU:hover{
+    transform:scale(6);
+    transform-origin: center;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%) scale(6);
+}
+
+.imagenPOU:not(:hover){
+    transform: scale(1) translate(0,0); 
+}
+
+#pruebasCastigos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pruebasCastigos > h2{
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    text-decoration:underline solid white 2px;
+    align-self: center;
+}
+
+#pruebasCastigos > table{
+    background-color:rgb(114, 113, 113);
+    border-radius: 1%;
+    box-shadow: 0px 0px 9px darkgray;
+    color: rgb(220, 207, 207);
+}
+
+.row > td{
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 5px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+.prueba{
+    text-align: center;
+}
+
+
+#tapaFooter{
+    margin-block-start:70px;
+}
+
+footer{
+    display: flex;
+    background-color: #000000;
+    justify-content: space-between;
+    color: white;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height:auto;
+    align-items: center;
+}
+
+footer > * > *{
+    margin-block-end: 0px;
+    margin-block-start: 0px;
 }

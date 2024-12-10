@@ -1,0 +1,18 @@
+nav{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+}
+
+ul{
+    list-style-type: none;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    padding-left: 0px;
+}
+
+.secciones{
+    text-decoration: none;
+    color: black;
+}

@@ -8,12 +8,12 @@
     <link rel="icon" href="/Multimedia/POU.jpg">
 </head>
 <body>
-    <main>
+    <main id="contenedor">
         <header>
             <section>
                 <h1>Programa estilo SAW: POU 3</h1>
             </section>
-        
+            <hr>
             <nav>
                 <label><a class="secciones" href="Inicio.html">Inicio</a></label>
                 <label id="Desafios">
@@ -25,24 +25,87 @@
                         <li><a class="secciones" href="Desafios/Prueba4.html">Prueba 4</a></li>
                         <li><a class="secciones" href="Desafios/Prueba5.html">Prueba 5</a></li>
                         <li><a class="secciones" href="Desafios/Prueba6.html">Prueba 6</a></li>
-                        <li><a class="secciones" href="Desafios/Prueba7.html">Prueba 7</a></li>
-                        <li><a class="secciones" href="Desafios/Prueba8.html">Prueba 8</a></li>
                     </ul>
                 </label>
-                <label><a class="secciones" href="Castigos/Castigos.html">Castigos</a></label>
                 <label><a class="secciones" href="Funcionalidades/funcionalidades.html">Funcionalidades</a></label>
                 <label><a class="secciones" href="Especial/FaseEspecial.html">Especial</a></label>
                 <label><a class="secciones" href="Desarrollo/Desarrollo.html">Desarrollo</a></label>
             </nav>
         </header>
 
-        <section>
+        <section id="descripcion">
             <h2>Descripcion</h2>
             <p>"POU 3" es un proyecto que nacio del concepto de un programa el cuál ejecuta la terminal de Windows y abre páginas de chrome.<br>
-            El concepto de dicho programa se pensó en el contexto de bromas entre amigos. Así como su predecesor POU 3 está creado bajo el mismo pretexto.<br>
-            Cabe destacar que a diferencia de su padre POU 3 es un programa más avanzado y con más funcionalidades.</p>
+            El concepto de dicho programa se pensó en el contexto de bromas entre amigos.<br>
+            Así como su predecesor POU 3 está creado bajo el mismo pretexto y bajo las mismas condiciones.<br>
+            Cabe destacar que a diferencia de su padre, este es un programa más avanzado y con más funcionalidades.</p>
+        </section>
+
+        <section id="comparativa">
+            <h2>Comparativa</h2>
+            <div id="contenedorImagen">
+                <label>
+                    <h3>POU</h3>
+                    <p>Se trata de un programa que ejecuta la terminal de Windows y abre páginas de chrome.</p>
+                    <p class="codigo">Codigo POU1:</p>
+                    <img id="imagenPOU1" class = "imagenPOU" src="/Multimedia/POU1.png" alt="Trozo de código de POU1">
+                </label>
+                <label>
+                    <h3>POU2</h3>
+                    <p>Se expandio prporcinandole la capacidad de guardarse como aplicación ejecutable al iniciarse el sistema (Necesario permisos de administrador).</p>
+                    <p class="codigo">Codigo POU2:</p>
+                    <img id="imagenPOU2" class = "imagenPOU" src="/Multimedia/POU2.png" alt="trozo de código de POU2">
+                </label>
+                <label>
+                    <h3>POU3</h3>
+                    <p>Pego un salto comparado con los anteriores teniendo la capacidad de copiarse e inciarse dentro del sistema, aparte de ser un programa con varias secciones y capaz de remodelar archivos.</p>
+                    <p class="codigo">Codigo POU3:</p>
+                    <img id="imagenPOU3" class = "imagenPOU" src="/Multimedia/POU3.png" alt="Trozo de código de POU3">
+                </label>
+            </div>
+        </section>
+
+        <sectionid id="pruebasCastigos">
+            <h2>Pruebas y Castigos</h2>
+            <table>
+                <tr class="row">
+                    <td class="prueba">Clave</td>
+                    <td>La primera prueba es una clave de un número atleatorio del 1 al 30, por cada fallo se abre una pagina web atleatoria.</td>
+                </tr>
+                <tr class="row">
+                    <td class="prueba">Ecuacion</td>
+                    <td>Se lanzara una ecuación atleatoria y tendrá que resolverla y dar la respuesta, por cada fallo se le robara memoria de su equipo.</td>
+                </tr>
+                <tr class="row">
+                    <td class="prueba">Tres en raya</td>
+                    <td>Tendra que jugar partidas de <cite>tres en raya</cite>, si pierde se sobrecargaran los drivers de la pantalla.</td>
+                </tr>
+                <tr class="row">
+                    <td class="prueba">Ahorcado</td>
+                    <td>En este juego clasico tendras que acertar una palabra atleatoria poco a poco. Si pierde sufrira un castigo(Castigo pendiente de planificación)</td>
+                </tr>
+                <tr class="row">
+                    <td class="prueba">Yincana</td>
+                    <td>Habra un archivo escondido en su equipo, debera encontrarlo rápido, ya que por cada 5 minutos que pasen, todos los procesos subiran un porcentaje atleatorio.</td>
+                </tr>
+                <tr class="row">
+                    <td class="prueba">Prueba #6(No esta decidida aún)</td>
+                    <td>Esta prueba esta pendiente de planificación, pero su castigo sera la instalación de un malware conocido el <cite>Bonzi</cite>.</td>
+                </tr>
+            </table>
         </section>
     </main>
+    <div id="tapaFooter">
+        <footer>
+            <p>@Author: Hugo de Cristóbal Gómez</p>
+            <address>
+                <p>Disclaimer: </p>
+                <p>A la hora de plantearse el instalar el software</p>
+                <p>ha de tener cuidado pues es peligroso.</p>
+            </address>
+        </footer>
+    </div>
     <script src="submenu.js" defer></script>
+    <script src="expansion.js" ></script>
 </body>
 </html>
